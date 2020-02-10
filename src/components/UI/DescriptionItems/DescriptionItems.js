@@ -3,6 +3,7 @@ import DescriptionItem from './DescriptionItem/DescriptionItem'
 
 import Icons from '../../../images/sprites.svg'
 
+import classes from './DescriptionItems.module.scss'
 const items = [
     {
         info: 'Svein Jakob Høie',
@@ -42,7 +43,7 @@ const descriptionItems = () => {
         )
     })
 
-    return <div>{descItems}</div>
+    return <div className={classes.DescriptionItems}>{descItems}</div>
 }
 
 export default descriptionItems

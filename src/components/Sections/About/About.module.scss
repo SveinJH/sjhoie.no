@@ -1,0 +1,16 @@
+.About {
+    height: 70vh;
+    grid-column: center-start / center-end;
+
+    display: flex;
+
+    &__image {
+        height: 80%;
+        width: auto;
+
+        &__container {
+            width: 50%;
+            padding: 2rem;
+        }
+    }
+}

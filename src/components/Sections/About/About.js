@@ -8,7 +8,7 @@ const about = () => {
         <div className={classes.About}>
             <div style={{ width: '50%' }}>
                 <div className="heading-1">Svein Jakob Høie</div>
-                <div className="heading-3">Dataingeniørstudent</div>
+                <div className="heading-3">Dataingeniørstudent, 2. år</div>
                 <div className="heading-4">NTNU, Trondheim</div>
                 <p
                     style={{

@@ -1,13 +1,14 @@
 .Skills {
     padding: 1rem 3rem;
-    background-color: rgb(244, 244, 244);
+    background-color: rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(230, 230, 230);
 
     grid-column: full-start / full-end;
 
     &__containers {
         padding: 2rem 0;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(10rem, 25rem));
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 22rem));
         grid-gap: 3rem;
         justify-content: center;
     }
@@ -44,9 +45,16 @@
 
         &_front {
             background-color: #fff;
+
+            & > svg {
+                margin-bottom: 1rem;
+            }
         }
 
         &_back {
+            justify-content: center;
+            text-align: center;
+            font-size: 1.5rem;
             transform: rotateY(180deg);
             background: rgb(255, 235, 199);
             background: linear-gradient(

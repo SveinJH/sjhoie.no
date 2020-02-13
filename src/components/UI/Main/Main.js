@@ -2,6 +2,7 @@ import React from 'react'
 
 import About from '../../Sections/About/About'
 import Skills from '../../Sections/Skills/Skills'
+import Projects from '../../Sections/Projects/Projects'
 import classes from './Main.module.scss'
 
 const main = () => {
@@ -9,6 +10,7 @@ const main = () => {
         <div className={classes.Main}>
             <About />
             <Skills />
+            <Projects />
         </div>
     )
 }

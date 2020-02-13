@@ -1,12 +1,13 @@
 .About {
     padding: 1rem 3rem;
-    height: 66vh;
+    height: 62vh;
     grid-column: full-start / full-end;
 
     display: flex;
 
     &__image {
-        height: 90%;
+        margin-left: 10%;
+        height: 80%;
         width: auto;
 
         &__container {

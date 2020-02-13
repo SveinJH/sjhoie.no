@@ -8,6 +8,9 @@ const sideDrawer = props => {
     return (
         <div className={classes.SideDrawer}>
             <DescriptionItems />
+            <div className={classes.SideDrawer__copyright}>
+                Copyright © 2020 Svein Jakob Høie
+            </div>
         </div>
     )
 }

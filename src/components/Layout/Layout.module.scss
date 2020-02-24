@@ -5,3 +5,11 @@
     grid-template-columns: auto 1fr;
     grid-template-areas: 'sidedrawer main';
 }
+
+@media (max-width: 1000px) {
+    .Layout {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}

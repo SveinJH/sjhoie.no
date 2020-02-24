@@ -14,6 +14,16 @@ module.exports = {
                 path: `${__dirname}/src/images`,
             },
         },
+        {
+            resolve: 'gatsby-plugin-manifest',
+            options: {
+                name: 'sveinjakobhoie',
+                short_name: 'sjh',
+                start_url: '/',
+                display: 'minimal-ui',
+                icon: 'src/images/S.png',
+            },
+        },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         // this (optional) plugin enables Progressive Web App + Offline functionality

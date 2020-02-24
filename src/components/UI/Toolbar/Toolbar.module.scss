@@ -1,0 +1,17 @@
+.Toolbar {
+    height: 4rem;
+    grid-area: main;
+    width: 100%;
+    display: none;
+    background-color: var(--main-color);
+    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1000px) {
+    .Toolbar {
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        z-index: 2;
+    }
+}

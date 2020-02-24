@@ -1,0 +1,109 @@
+.Contact {
+    padding: 3rem 2rem;
+    background-color: #fff7e8;
+    grid-column: full-start / full-end;
+    text-align: center;
+
+    &__icons {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__icon {
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 2rem;
+        margin: 1rem;
+        transition: all 0.25s ease;
+        background-color: var(--main-color);
+        cursor: pointer;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+
+        & > * {
+            transition: all 0.25s ease;
+        }
+
+        &:hover {
+            background-color: #ffdfa3;
+
+            & > * {
+                transform: rotate(30deg);
+            }
+        }
+    }
+
+    &__info {
+        width: 70%;
+        margin: 2.2rem 15%;
+        font-size: 1.9rem;
+    }
+
+    &__email {
+        font-size: 4rem;
+        color: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+        display: inline-block;
+        background-clip: text;
+        background-image: linear-gradient(to right, #f8c361, rgb(219, 143, 3));
+
+        background-size: 600% 600%;
+        animation: animateEmail 3s ease infinite;
+
+        &:hover {
+            transform: scale(1.2);
+            background-image: linear-gradient(
+                135deg,
+                #2efdc7,
+                #d71414,
+                #146ed7
+            );
+        }
+
+        & a {
+            color: inherit;
+        }
+    }
+}
+
+@keyframes animateEmail {
+    0% {
+        background-position: 0% 43%;
+    }
+
+    50% {
+        background-position: 100% 58%;
+    }
+
+    100% {
+        background-position: 0% 43%;
+    }
+}
+
+@media (max-width: 550px) {
+    .Contact {
+        &__info {
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        &__email {
+            font-size: 3.4rem;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .Contact {
+        &__info {
+            font-size: 1.7rem;
+        }
+
+        &__email {
+            font-size: 2.8rem;
+        }
+    }
+}

@@ -1,14 +1,19 @@
 .Main {
     color: #5c5c5c;
-    padding: 2rem 0;
+    padding: 2rem 0 0 0;
     grid-area: main;
 
     display: grid;
-    grid-template-rows: 62vh;
     grid-template-columns:
         [full-start] minmax(3rem, 1fr) [center-start] repeat(
             8,
             [col-start] minmax(0.5rem, 14rem) [col-end]
         )
         [center-end] minmax(3rem, 1fr) [full-end];
+}
+
+@media (max-width: 1000px) {
+    .Main {
+        padding: 4rem 0 0 0;
+    }
 }

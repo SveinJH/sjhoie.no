@@ -1,9 +1,10 @@
 .SideDrawer {
     padding: 2rem 3rem;
     position: relative;
+    box-shadow: 0 0.6rem 0.8rem rgba(0, 0, 0, 0.5);
 
     grid-area: sidedrawer;
-    background-color: #fdcb6e;
+    background-color: var(--main-color);
 
     &__copyright {
         width: 100%;
@@ -11,5 +12,11 @@
         position: absolute;
         bottom: 2rem;
         left: 2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .SideDrawer {
+        display: none;
     }
 }

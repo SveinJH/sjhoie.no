@@ -1,0 +1,28 @@
+.SideDrawerMobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 3rem;
+    z-index: 200;
+    height: 100%;
+    background-color: var(--main-color);
+    display: none;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
+}
+
+.Closed {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.Open {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media (max-width: 1000px) {
+    .SideDrawerMobile {
+        display: block;
+    }
+}

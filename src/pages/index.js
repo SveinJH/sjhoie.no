@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
 
 import Layout from '../components/Layout/Layout'
 import Main from '../components/UI/Main/Main'
 import SideDrawer from '../components/UI/SideDrawer/SideDrawer'
+import SideDrawerMobile from '../components/UI/SideDrawer/SideDrawerMobile'
 
 const IndexPage = () => {
+    const [showSideDrawer, setShowSideDrawer] = useState(false)
+
+    const toggleSideDrawer = () => {
+        setShowSideDrawer(!showSideDrawer)
+    }
+
     return (
         <>
             <Helmet>
@@ -13,8 +20,12 @@ const IndexPage = () => {
                 <title>Svein Jakob Høie</title>
             </Helmet>
             <Layout>
-                <SideDrawer>SIDEDRAWER</SideDrawer>
-                <Main>MAIN</Main>
+                <SideDrawerMobile
+                    show={showSideDrawer}
+                    clicked={toggleSideDrawer}
+                />
+                <SideDrawer />
+                <Main />
             </Layout>
         </>
     )

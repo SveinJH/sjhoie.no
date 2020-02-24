@@ -1,0 +1,18 @@
+.Button {
+    font-family: 'Montserrat', sans-serif;
+    color: #eee;
+    padding: 0.5rem 1.8rem;
+    font-size: 1.6rem;
+    border: none;
+    background-color: #242424;
+    transition: all 0.3s;
+    border-radius: 0.4rem;
+    box-shadow: 0 0.6rem 0.8rem rgba(0, 0, 0, 0.55);
+
+    &:hover {
+        transform: scale(1.12);
+        color: #000000;
+        background-color: #eee;
+        box-shadow: 0 1rem 1.2rem rgba(0, 0, 0, 0.6);
+    }
+}

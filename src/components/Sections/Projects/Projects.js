@@ -1,16 +1,11 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 
 import classes from './Projects.module.scss'
 import Button from '../../UI/Button/Button'
 
-import cruiseFix from '../../../images/project-2.jpg'
-import hoie_dev from '../../../images/project-0.png'
-import trillo from '../../../images/project-3.jpg'
-
 const projectsInfo = [
     {
-        image: hoie_dev,
+        image: '../../../../project-0.jpg',
         title: 'hoie.dev',
         links: [
             { text: 'Besøk', url: 'https://hoie.dev' },
@@ -21,7 +16,7 @@ const projectsInfo = [
         ],
     },
     {
-        image: cruiseFix,
+        image: '../../../../project-2.jpg',
         title: 'CruiseFix',
         links: [
             {
@@ -35,7 +30,7 @@ const projectsInfo = [
         ],
     },
     {
-        image: '/nexter.jpg',
+        image: '../../../../project-1.jpg',
         title: 'Nexter',
         links: [
             {
@@ -49,7 +44,7 @@ const projectsInfo = [
         ],
     },
     {
-        image: trillo,
+        image: '../../../../project-3.jpg',
         title: 'Trillo',
         links: [
             {

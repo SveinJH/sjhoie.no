@@ -5,7 +5,7 @@ import Button from '../../UI/Button/Button'
 
 const projectsInfo = [
     {
-        image: '../../../../project-0.jpg',
+        image: '../../../../project-0.png',
         title: 'hoie.dev',
         links: [
             { text: 'Besøk', url: 'https://hoie.dev' },

@@ -83,7 +83,7 @@ const skillInfo = [
 const skills = () => {
     const skillContainers = skillInfo.map(skill => {
         return (
-            <div className={classes.Skills__container}>
+            <div key={skill.name} className={classes.Skills__container}>
                 <div
                     className={[
                         classes.Skills__side,

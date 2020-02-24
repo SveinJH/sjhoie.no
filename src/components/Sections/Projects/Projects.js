@@ -1,4 +1,5 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import classes from './Projects.module.scss'
 import Button from '../../UI/Button/Button'
@@ -6,7 +7,6 @@ import Button from '../../UI/Button/Button'
 import cruiseFix from '../../../images/project-2.jpg'
 import hoie_dev from '../../../images/project-0.png'
 import trillo from '../../../images/project-3.jpg'
-import nexter from '../../../images/project-1.jpg'
 
 const projectsInfo = [
     {
@@ -35,7 +35,7 @@ const projectsInfo = [
         ],
     },
     {
-        image: nexter,
+        image: '/nexter.jpg',
         title: 'Nexter',
         links: [
             {
@@ -64,10 +64,10 @@ const projectsInfo = [
     },
 ]
 
-const projects = () => {
+const Projects = props => {
     const projectContainers = projectsInfo.map(project => {
         return (
-            <div className={classes.Project__container}>
+            <div key={project.title} className={classes.Project__container}>
                 <div className="heading-5" style={{ fontSize: '2rem' }}>
                     {project.title}
                 </div>
@@ -78,8 +78,10 @@ const projects = () => {
                 />
 
                 <div className={classes.Project__buttons}>
-                    {project.links.map(link => {
-                        return <Button text={link.text} link={link.url} />
+                    {project.links.map((link, i) => {
+                        return (
+                            <Button key={i} text={link.text} link={link.url} />
+                        )
                     })}
                 </div>
             </div>
@@ -96,4 +98,4 @@ const projects = () => {
     )
 }
 
-export default projects
+export default Projects

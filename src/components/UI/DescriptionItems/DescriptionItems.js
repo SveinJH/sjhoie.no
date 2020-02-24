@@ -35,6 +35,7 @@ const descriptionItems = () => {
     const descItems = items.map(item => {
         return (
             <DescriptionItem
+                key={item.name}
                 info={item.info}
                 name={item.name}
                 icons={Icons}

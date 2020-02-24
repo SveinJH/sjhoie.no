@@ -50,7 +50,10 @@ const contact = () => {
             <div className={classes.Contact__icons}>
                 {contactIcons.map(contactIcon => {
                     return (
-                        <div className={classes.Contact__icon}>
+                        <div
+                            key={contactIcon.name}
+                            className={classes.Contact__icon}
+                        >
                             <a
                                 target="_blank"
                                 href={contactIcon.href}

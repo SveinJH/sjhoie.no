@@ -1,13 +1,38 @@
 import React from 'react'
+import { useTransition, animated, config } from 'react-spring'
 
 import classes from './About.module.scss'
 import personSVG from '../../../images/person.svg'
 
-const about = () => {
+const About = () => {
+    const transitions = useTransition('Svein Jakob Høie', item => item.id, {
+        from: { transform: 'translateY(-100%)', opacity: '0' },
+        enter: item => async (next, cancel) => {
+            await new Promise(resolve => setTimeout(resolve, 440))
+            await next({
+                config: config.wobbly,
+                transform: 'translateY(0)',
+                opacity: '1',
+            })
+        },
+    })
+    console.log(transitions)
+
     return (
         <div className={classes.About}>
             <div className={classes.About__info}>
-                <div className="heading-1">Svein Jakob Høie</div>
+                {/* <div className="heading-1">Svein Jakob Høie</div> */}
+                {transitions.map(item => {
+                    return (
+                        <animated.div
+                            key={item.key}
+                            style={item.props}
+                            className="heading-1"
+                        >
+                            {item.item}
+                        </animated.div>
+                    )
+                })}
                 <div className="heading-3">Dataingeniørstudent, 2. år</div>
                 <div className="heading-4">NTNU, Trondheim</div>
                 <p>
@@ -33,4 +58,4 @@ const about = () => {
     )
 }
 
-export default about
+export default About

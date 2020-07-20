@@ -13,6 +13,10 @@ const contactIcons = [
         name: 'linkedin',
         href: 'https://www.linkedin.com/in/sveinjakobhoie/',
     },
+    {
+        name: 'instagram',
+        href: 'https://www.instagram.com/dev.hoie',
+    },
 ]
 
 const contact = () => {
@@ -33,7 +37,7 @@ const contact = () => {
                 >
                     GitHub
                 </span>{' '}
-                og{' '}
+                ,{' '}
                 <span
                     style={{
                         color: '#fca709',
@@ -42,6 +46,17 @@ const contact = () => {
                     }}
                 >
                     LinkedIn
+                </span>{' '}
+                og
+                <span
+                    style={{
+                        color: '#fca709',
+                        fontStyle: 'italic',
+                        fontWeight: '600',
+                    }}
+                >
+                    {' '}
+                    Instagram
                 </span>
             </p>
             <div className={classes.Contact__email}>

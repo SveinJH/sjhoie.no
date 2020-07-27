@@ -33,7 +33,7 @@ const About = () => {
                         </animated.div>
                     )
                 })}
-                <div className="heading-3">Dataingeniørstudent, 2. år</div>
+                <div className="heading-3">Dataingeniørstudent, 3. år</div>
                 <div className="heading-4">NTNU, Trondheim</div>
                 <p>
                     Mitt navn er Svein Jakob Høie og jeg er en 21 år gammel mann

@@ -5,6 +5,17 @@ import Button from '../../UI/Button/Button'
 
 const projectsInfo = [
     {
+        image: '../../../../project-4.png',
+        title: 'the wine base',
+        links: [
+            { text: 'Besøk', url: 'https://twb.sjhoie.no' },
+            {
+                text: 'GitHub',
+                url: 'https://github.com/SveinJH/thewinebase',
+            },
+        ],
+    },
+    {
         image: '../../../../project-0.png',
         title: 'hoie.dev',
         links: [

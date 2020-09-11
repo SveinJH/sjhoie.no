@@ -23,7 +23,7 @@ const items = [
         name: 'map-pin',
     },
     {
-        info: 'www.hoie.dev',
+        info: 'www.sjhoie.no',
         name: 'link',
     },
     {

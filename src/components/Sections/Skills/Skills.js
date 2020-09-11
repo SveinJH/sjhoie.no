@@ -9,25 +9,19 @@ const skillInfo = [
         name: 'Java',
         icon: 'java',
         description:
-            'Java har jeg brukt siden starten av dataingeniør-studiet, og føler meg meget komfortabel med dette.',
+            'Java har jeg brukt siden starten av dataingeniør-studiet, og føler meg komfortabel med det',
     },
     {
         name: 'Javascript',
         icon: 'javascript',
         description:
-            'JavaScript er et språk jeg har god kjennskap til. Bruker det ofte i forbindelse med React, men også vanilla.',
+            'JavaScript er et språk jeg har god kjennskap til. Bruker det ofte i forbindelse med React',
     },
     {
         name: 'React',
         icon: 'react',
         description:
-            'React er favoritten når det kommer til rammeverk. Bruker også Redux i de tilfellene det passer seg!  ',
-    },
-    {
-        name: 'Gatsby',
-        icon: 'gatsby',
-        description:
-            'Gatsby har jeg brukt til denne nettsiden. Det er en perfekt PWA generator for statiske sider som denne.',
+            'React er favoritten når det kommer til rammeverk. Kombinert med Hooks er det en fryd å bruke',
     },
     {
         name: 'Node',
@@ -35,18 +29,30 @@ const skillInfo = [
         description:
             'Har brukt Node for å lage RESTful API til fullstack-prosjekter sammen med React',
     },
+    {
+        name: 'Python',
+        icon: 'python',
+        description:
+            'Har startet å lære meg Python for å kunne automatisere enkelte oppgaver jeg ellers ville brukt mye tid på',
+    },
+    {
+        name: 'PyTorch',
+        icon: 'pytorch',
+        description:
+            'PyTorch er rammeverket vi benytter oss av på NTNU i faget "Anvendt Maskinlæring"',
+    },
 
     {
         name: 'Git',
         icon: 'git',
         description:
-            'Git versjonskontroll er en nødvendighet når jeg jobber med prosjekter. Enkel tilgang til alt alltid.',
+            'Git versjonskontroll er en nødvendighet når jeg jobber med prosjekter. Enkel tilgang til alt alltid',
     },
 
     {
         name: 'HTML',
         icon: 'html5',
-        description: 'HTML er HTML. Enkelt og greit.',
+        description: 'HTML er HTML',
     },
     {
         name: 'CSS',
@@ -58,25 +64,25 @@ const skillInfo = [
         name: 'SASS',
         icon: 'sass',
         description:
-            'SASS er for min del et veldig viktig verktøy for å få bedre oversikt, samt mer kompakt og leselig CSS.',
+            'SASS er for min del et veldig viktig verktøy for å få bedre oversikt, samt mer kompakt og leselig CSS',
     },
     {
         name: 'MongoDB',
         icon: 'mongodb',
         description:
-            'Har brukt MongoDB sammen med NodeJS for å lagre data i en rask og oversiktlig NoSQL database.',
+            'Har brukt MongoDB sammen med NodeJS for å lagre data i en rask og oversiktlig NoSQL database',
     },
     {
         name: 'Firebase',
         icon: 'firebase',
         description:
-            'Har brukt Firebase for raskt oppsett av serverløse applikasjoner, lagring av små mengder data og enkel autentisering.',
+            'Har brukt Firebase for raskt oppsett av serverløse applikasjoner, lagring av små mengder data og enkel autentisering',
     },
     {
         name: 'MySQL',
         icon: 'mysql',
         description:
-            'Har brukt MySQL i flere teamprosjekt på NTNU, bl.a Scrum, og har god kontroll på det.',
+            'Har brukt MySQL i flere teamprosjekt på NTNU, bl.a Scrum, og har god erfaring med det',
     },
 ]
 
